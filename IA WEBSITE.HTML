@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICONIC ACADEMY | Classes 5 to 10 - UP & CBSE Board | Directed by AFTAB ANSARI</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#0a0f1d'
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0a0f1d 0%, #1e293b 50%, #0f172a 100%); }
+        .gold-gradient { background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .glow-effect { box-shadow: 0 0 25px rgba(245, 158, 11, 0.3); }
+        .floating-wa { animation: pulse-wa 2s infinite; }
+        @keyframes pulse-wa {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-red-600 text-white text-xs md:text-sm py-2 px-4 font-bold text-center shadow-md flex items-center justify-between gap-2 overflow-hidden">
+        <div class="container mx-auto flex items-center justify-between">
+            <span class="flex items-center gap-2 mx-auto md:mx-0">
+                <span class="animate-pulse bg-white text-red-600 text-[10px] md:text-xs uppercase px-2 py-0.5 rounded-full font-black">Admissions Open</span>
+                <span>🔥 Limited Seats Available for New Batch! Class 5th to 10th (UP & CBSE Board)</span>
+            </span>
+            <div class="hidden md:flex items-center gap-4 text-xs">
+                <a href="tel:7617863593" class="hover:underline flex items-center gap-1"><i class="fa-solid fa-phone"></i> 7617863593</a>
+                <span>|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-user-graduate"></i> Directed by: AFTAB ANSARI (B.Ed.)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-amber-500/20 text-white shadow-xl">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-white border-2 border-amber-400 flex items-center justify-center p-1 shadow-lg group-hover:scale-105 transition">
+                    <!-- Custom SVG Emblem representing ICONIC ACADEMY -->
+                    <svg class="w-8 h-8 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-amber-400 tracking-wider uppercase leading-none group-hover:text-amber-300 transition">
+                        ICONIC ACADEMY
+                    </h1>
+                    <p class="text-[10px] md:text-xs text-amber-200 font-semibold tracking-wider italic mt-0.5">★ Strive for Excellence ★</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-200">
+                <a href="#home" class="hover:text-amber-400 transition py-1">होम (Home)</a>
+                <a href="#about" class="hover:text-amber-400 transition py-1">हमारे बारे में</a>
+                <a href="#courses" class="hover:text-amber-400 transition py-1">कक्षाएं (Classes)</a>
+                <a href="#spoken-english" class="hover:text-amber-400 transition py-1">English Spoken</a>
+                <a href="#features" class="hover:text-amber-400 transition py-1">विशेषताएं</a>
+                <a href="#quiz-portal" class="hover:text-amber-400 transition py-1 text-amber-300 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-square-check"></i> ऑनलाइन टेस्ट
+                </a>
+                <a href="#contact" class="hover:text-amber-400 transition py-1">संपर्क करें</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <button onclick="openInquiryModal()" class="hidden sm:flex bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-4 py-2 rounded-xl text-sm shadow-md hover:shadow-amber-500/20 transition items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square"></i> एडमिशन हेतु संपर्क
+                </button>
+                <a href="tel:7617863593" class="lg:hidden bg-amber-500 text-slate-950 w-10 h-10 rounded-xl flex items-center justify-center font-bold shadow-md">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <button id="menu-btn" onclick="toggleMobileMenu()" class="lg:hidden text-white text-2xl p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950 border-b border-slate-800 px-4 py-4 space-y-3 font-medium text-sm">
+            <a href="#home" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800/60">होम (Home)</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800/60">हमारे बारे में</a>
+            <a href="#courses" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800/60">कक्षाएं (Classes 5-10)</a>
+            <a href="#spoken-english" onclick="toggleMobileMenu()" class="block text-amber-300 hover:text-amber-400 py-2 border-b border-slate-800/60 font-bold">English Spoken Classes</a>
+            <a href="#features" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800/60">विशेषताएं (Why Choose Us)</a>
+            <a href="#quiz-portal" onclick="toggleMobileMenu()" class="block text-amber-400 hover:text-amber-300 py-2 border-b border-slate-800/60 font-bold">🎯 ऑनलाइन टेस्ट (Quiz Portal)</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-amber-400 py-2">संपर्क करें (Contact Us)</a>
+            <button onclick="openInquiryModal(); toggleMobileMenu();" class="w-full bg-amber-500 text-slate-950 font-bold py-3 rounded-xl shadow-lg mt-2 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-file-pen"></i> ऑनलाइन एडमिशन फॉर्म भरें
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-12 md:py-20 relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Hero Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs md:text-sm font-semibold">
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <span>श्रेष्ठ शिक्षा का अग्रणी संस्थान</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200">ICONIC ACADEMY</span>
+                    </h1>
+
+                    <p class="text-amber-200 font-bold text-lg md:text-xl tracking-wide italic">
+                        ★ Strive for Excellence ★
+                    </p>
+
+                    <div class="bg-slate-800/80 border border-slate-700/80 p-4 md:p-5 rounded-2xl shadow-xl space-y-2 max-w-2xl mx-auto lg:mx-0">
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                            <span class="bg-blue-600/30 text-blue-200 text-sm md:text-base px-3 py-1 rounded-lg font-bold border border-blue-400/30">
+                                📚 Classes 5 to 10
+                            </span>
+                            <span class="bg-emerald-600/30 text-emerald-200 text-sm md:text-base px-3 py-1 rounded-lg font-bold border border-emerald-400/30">
+                                🎓 UP BOARD & CBSE BOARD
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm md:text-base pt-1">
+                            Directed by: <span class="text-white font-black text-base md:text-lg">AFTAB ANSARI (B.Ed.)</span>
+                        </p>
+                    </div>
+
+                    <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        हमारे यहाँ मजबूत कॉन्सेप्ट्स, अनुभवी शिक्षकों और नियमित टेस्ट सीरीज के माध्यम से विद्यार्थियों के उज्ज्वल भविष्य की नींव रखी जाती है।
+                    </p>
+
+                    <!-- Hero Call-to-Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openInquiryModal()" class="w-full sm:w-auto bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-amber-500/25 transition text-base flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> एडमिशन हेतु आवेदन करें
+                        </button>
+                        <a href="#quiz-portal" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/30 font-bold px-6 py-4 rounded-xl transition text-base flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-laptop-code"></i> ऑनलाइन टेस्ट देकर खुद को परखें
+                        </a>
+                    </div>
+
+                    <div class="pt-2 flex items-center justify-center lg:justify-start gap-6 text-xs md:text-sm text-slate-400 font-medium">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> बोर्ड परीक्षा स्पेशल तैयारी</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> स्पेशल इंग्लिश स्पोकन</span>
+                    </div>
+                </div>
+
+                <!-- Hero Right Card / Quick Info Badge -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-b from-slate-800/90 to-slate-900/90 border-2 border-amber-400/40 rounded-3xl p-6 md:p-8 shadow-2xl relative glow-effect max-w-md mx-auto">
+                        <!-- Badge -->
+                        <div class="absolute -top-4 right-6 bg-red-600 text-white font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-bounce">
+                            New Batch Starting!
+                        </div>
+
+                        <div class="text-center space-y-4">
+                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white p-2 shadow-inner border-2 border-amber-400 flex items-center justify-center">
+                                <svg class="w-12 h-12 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="text-2xl font-black text-amber-400">ICONIC ACADEMY</h3>
+                                <p class="text-xs text-amber-200/80 font-bold uppercase tracking-widest mt-0.5">Quality Coaching Center</p>
+                            </div>
+
+                            <div class="space-y-2.5 text-left bg-slate-950/60 p-4 rounded-xl border border-slate-700 text-xs md:text-sm text-slate-200">
+                                <div class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-user-check text-amber-400 mt-1"></i>
+                                    <div><strong class="text-white">Director:</strong> AFTAB ANSARI (B.Ed.)</div>
+                                </div>
+                                <div class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-book-open text-amber-400 mt-1"></i>
+                                    <div><strong class="text-white">Courses:</strong> Class 5th to 10th (All Subjects)</div>
+                                </div>
+                                <div class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-graduation-cap text-amber-400 mt-1"></i>
+                                    <div><strong class="text-white">Boards:</strong> UP Board & CBSE Board</div>
+                                </div>
+                                <div class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-phone text-emerald-400 mt-1"></i>
+                                    <div><strong class="text-white">Helpline:</strong> 7617863593</div>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/917617863593?text=Hello%20Aftab%20Sir,%20I%20want%20information%20about%20admission%20in%20ICONIC%20ACADEMY." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Aftab Sir से WhatsApp पर बात करें
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Highlights Banner -->
+    <section class="bg-amber-400 text-slate-950 py-6 border-y-2 border-amber-500 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-3 border-r border-slate-900/10 last:border-0">
+                    <i class="fa-solid fa-book-bookmark text-2xl md:text-3xl text-slate-900 mb-1"></i>
+                    <h4 class="font-black text-sm md:text-base">QUALITY TEACHING</h4>
+                    <p class="text-xs font-bold text-slate-800">Better Concepts</p>
+                </div>
+                <div class="p-3 border-r border-slate-900/10 last:border-0">
+                    <i class="fa-solid fa-bullseye text-2xl md:text-3xl text-slate-900 mb-1"></i>
+                    <h4 class="font-black text-sm md:text-base">FOCUSED LEARNING</h4>
+                    <p class="text-xs font-bold text-slate-800">Better Results</p>
+                </div>
+                <div class="p-3 border-r border-slate-900/10 last:border-0">
+                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl text-slate-900 mb-1"></i>
+                    <h4 class="font-black text-sm md:text-base">REGULAR TESTS</h4>
+                    <p class="text-xs font-bold text-slate-800">Strong Performance</p>
+                </div>
+                <div class="p-3">
+                    <i class="fa-solid fa-hands-holding-child text-2xl md:text-3xl text-slate-900 mb-1"></i>
+                    <h4 class="font-black text-sm md:text-base">PERSONAL ATTENTION</h4>
+                    <p class="text-xs font-bold text-slate-800">Brighter Future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block bg-amber-100 text-amber-800 text-xs font-extrabold px-3 py-1 rounded-md uppercase tracking-wider">
+                        संस्थान के बारे में
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+                        ICONIC ACADEMY में आपका स्वागत है
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        <strong class="text-slate-900">ICONIC ACADEMY</strong> का मुख्य उद्देश्य कक्षा 5 से 10 तक के यूपी बोर्ड (UP Board) और सीबीएसई बोर्ड (CBSE Board) के विद्यार्थियों को गुणवत्तापूर्ण और परिणामोन्मुखी (Result-oriented) शिक्षा प्रदान करना है।
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        निदेशक <strong class="text-blue-900">AFTAB ANSARI (B.Ed.)</strong> के कुशल मार्गदर्शन में हम हर विद्यार्थी की व्यक्तिगत क्षमता पर ध्यान देते हैं। यहाँ रटने के स्थान पर विषयों की गहरी समझ विकसित की जाती है ताकि विद्यार्थी बोर्ड परीक्षाओं में शीर्ष अंक प्राप्त कर सकें।
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">
+                                🎓
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">बी.एड. प्रशिक्षित शिक्षक</h4>
+                                <p class="text-xs text-slate-500">अनुभवी अध्यापन तकनीक</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg shrink-0">
+                                📊
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">साप्ताहिक मूल्यांकन</h4>
+                                <p class="text-xs text-slate-500">नियमित टेस्ट व रिपोर्ट</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Director's Card -->
+                <div class="lg:col-span-6">
+                    <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white rounded-3xl p-8 shadow-2xl relative border-2 border-amber-400/30">
+                        <div class="flex flex-col sm:flex-row items-center gap-6">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-amber-400 to-amber-200 p-1 shrink-0 shadow-lg">
+                                <div class="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center text-amber-400 font-black text-3xl">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest block mb-1">Director's Message</span>
+                                <h3 class="text-2xl font-black text-white">AFTAB ANSARI</h3>
+                                <p class="text-amber-200 text-sm font-semibold">B.Ed. | Director & Mentor</p>
+                                <p class="text-slate-300 text-xs italic mt-2">
+                                    "हमारा उद्देश्य केवल किताबों को पढ़ाना नहीं, बल्कि बच्चे में आत्मविश्वास और परीक्षा में उत्कृष्टता की ललक जगाना है।"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-slate-800 grid grid-cols-2 gap-4 text-center text-xs">
+                            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700">
+                                <span class="block text-amber-400 font-bold text-lg">100%</span>
+                                <span class="text-slate-300">व्यक्तिगत मार्गदर्शन</span>
+                            </div>
+                            <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700">
+                                <span class="block text-amber-400 font-bold text-lg">Class 5-10</span>
+                                <span class="text-slate-300">UP & CBSE Board</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Highlight: Junior English Spoken Classes -->
+    <section id="spoken-english" class="py-16 bg-gradient-to-r from-blue-950 via-slate-900 to-blue-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="bg-slate-900/80 border-2 border-amber-400 rounded-3xl p-6 md:p-10 shadow-2xl relative">
+                
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    
+                    <div class="space-y-4 max-w-2xl">
+                        <div class="inline-flex items-center gap-2 bg-red-600 text-white font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+                            🔥 SPECIAL BATCH
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-black text-amber-400">
+                            JUNIOR ENGLISH SPOKEN CLASSES
+                        </h2>
+                        <p class="text-slate-200 text-sm md:text-base leading-relaxed">
+                            बच्चों के अंग्रेजी बोलने, व्याकरण (Grammar) और आत्मविश्वास (Confidence) को मजबूत करने के लिए विशेष स्पोकन इंग्लिश क्लासेस।
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs md:text-sm">
+                            <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                                <i class="fa-solid fa-check-circle text-amber-400"></i>
+                                <span>Basic to Advanced Level</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                                <i class="fa-solid fa-check-circle text-amber-400"></i>
+                                <span>Grammar & Vocabulary</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                                <i class="fa-solid fa-check-circle text-amber-400"></i>
+                                <span>Speaking & Pronunciation</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                                <i class="fa-solid fa-check-circle text-amber-400"></i>
+                                <span>Personality Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center shrink-0 w-full md:w-auto">
+                        <div class="bg-amber-400 text-slate-950 p-6 rounded-2xl shadow-xl font-extrabold max-w-xs mx-auto">
+                            <span class="text-xs uppercase tracking-widest text-slate-800 block">Enroll Now</span>
+                            <span class="text-2xl font-black block my-1">English Spoken</span>
+                            <span class="text-xs font-bold text-slate-800 block mb-4">कक्षा 5 से 10 के बच्चों के लिए</span>
+                            <button onclick="openInquiryModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-amber-400 py-3 rounded-xl text-sm font-black transition shadow-md">
+                                बैच की जानकारी लें
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes & Courses Section -->
+    <section id="courses" class="py-16 md:py-24 bg-slate-100">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+                <span class="bg-blue-100 text-blue-800 font-extrabold text-xs px-3 py-1 rounded-md uppercase tracking-wider">
+                    पाठ्यक्रम एवं कक्षाएं
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+                    हमारे शैक्षणिक प्रोग्राम्स
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base">
+                    यूपी बोर्ड एवं सीबीएसई बोर्ड के विद्यार्थियों के लिए विशेष रूप से डिज़ाइन किए गए बैचेज
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Junior Classes 5-8 -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-200 hover:border-amber-400 transition hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center font-black text-2xl">
+                            🏫
+                        </div>
+                        <h3 class="text-xl font-extrabold text-slate-900">कक्षा 5 से 8 (Foundation)</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            सभी मुख्य विषयों (गणित, विज्ञान, अंग्रेजी) की बेसिक नींव मजबूत करने के लिए समर्पित मार्गदर्शन।
+                        </p>
+
+                        <ul class="space-y-2 text-xs md:text-sm text-slate-700">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> मजबूत गणित एवं बेसिक साइंस</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> बेसिक इंग्लिश ग्रामर</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> नियमित होमवर्क चेक व हेल्प</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <button onclick="openInquiryModal()" class="w-full bg-slate-900 hover:bg-blue-900 text-amber-400 font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition">
+                            बैच डिटेल्स प्राप्त करें
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Class 9th & 10th (Board Special) -->
+                <div class="bg-gradient-to-b from-slate-900 to-blue-950 text-white rounded-3xl p-6 shadow-2xl border-2 border-amber-400 relative flex flex-col justify-between">
+                    <span class="absolute -top-3 right-6 bg-amber-400 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                        Most Popular
+                    </span>
+
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center font-black text-2xl shadow-md">
+                            🎯
+                        </div>
+                        <h3 class="text-xl font-extrabold text-amber-400">कक्षा 9 एवं 10 (Board Special)</h3>
+                        <p class="text-slate-300 text-xs md:text-sm leading-relaxed">
+                            यूपी बोर्ड और सीबीएसई बोर्ड परीक्षा में टॉप करने के लिए विशेष रणनीति, चैप्टर-वाइज नोट्स और टेस्ट सीरीज।
+                        </p>
+
+                        <ul class="space-y-2 text-xs md:text-sm text-slate-200">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> विज्ञान (जीव विज्ञान, भौतिकी, रसायन)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> गणित एवं अंग्रेजी विषय स्पेशल</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> पिछले 10 वर्षों के प्रश्न-पत्र हल</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 50+ MCQ महा-क्विज़ प्रैक्टिस</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 mt-6">
+                        <button onclick="openInquiryModal()" class="w-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-black py-3 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+                            एडमिशन हेतु आवेदन करें
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Board Exam Preparation -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-200 hover:border-amber-400 transition hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center font-black text-2xl">
+                            ✍️
+                        </div>
+                        <h3 class="text-xl font-extrabold text-slate-900">UP & CBSE Board Special</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            दोनों बोर्ड्स के पैटर्न के अनुसार अलग-अलग स्टडी मटेरियल और उत्तर लेखन (Answer Writing) की ट्रेनिंग।
+                        </p>
+
+                        <ul class="space-y-2 text-xs md:text-sm text-slate-700">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> एनसीईआरटी (NCERT) पैटर्न</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> डाउट क्लियरिंग सेशंस</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-amber-500"></i> कमजोर छात्रों पर विशेष ध्यान</li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <button onclick="openInquiryModal()" class="w-full bg-slate-900 hover:bg-blue-900 text-amber-400 font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition">
+                            अधिक जानें
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features & Why Choose Us Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+                <span class="bg-amber-100 text-amber-800 font-extrabold text-xs px-3 py-1 rounded-md uppercase tracking-wider">
+                    WHY CHOOSE US?
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+                    ICONIC ACADEMY ही क्यों चुनें?
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base">
+                    हमारा संस्थान बच्चों को देता है बेहतर पढ़ाई का संपूर्ण वातावरण
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Concept-based Learning</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        बिना रटे हर विषय की मूल अवधारणाओं (Concepts) को सरल भाषा में समझाना हमारी पहली प्राथमिकता है।
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Experienced Faculty</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        Aftab Ansari Sir (B.Ed.) और अनुभवी शिक्षकों द्वारा समर्पित एवं गुणवत्तापूर्ण मार्गदर्शन।
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Weekly Tests & Analysis</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        हर सप्ताह टेस्ट का आयोजन और प्रदर्शन का विस्तृत विश्लेषण ताकि कमजोरियाँ समय पर दूर हो सकें।
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Doubt Clearing Sessions</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        विद्यार्थियों के हर छोटे-बड़े सवाल के समाधान के लिए अलग से डाउट क्लास ली जाती है।
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Focus on Weak Students</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        पढ़ाई में पीछे रहने वाले विद्यार्थियों के लिए विशेष ध्यान और अतिरिक्त रिवीजन सेशंस।
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Parent-Teacher Interaction</h4>
+                    <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                        अभिभावकों के साथ नियमित संवाद ताकि बच्चे की पढ़ाई में लगातार सुधार देखा जा सके।
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Portal Banner -->
+    <section id="quiz-portal" class="py-16 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950 text-white border-y-2 border-amber-400">
+        <div class="container mx-auto px-4 text-center">
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="inline-block bg-amber-400 text-slate-950 font-black text-xs px-3 py-1.5 rounded-full uppercase tracking-wider">
+                    🎯 ONLINE PRACTICE TEST
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-black text-amber-300">
+                    कक्षा 10 विज्ञान (जैव प्रक्रम) - 50 प्रश्नों का महा-क्विज़
+                </h2>
+
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    अपनी बोर्ड परीक्षा की तैयारी को परखने के लिए ऑनलाइन टेस्ट दें। टेस्ट पूरा होने के बाद आपका स्कोर कार्ड सीधे <strong class="text-amber-400">Aftab Sir के WhatsApp (7617863593)</strong> पर भेजने की सुविधा भी उपलब्ध है!
+                </p>
+
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl max-w-lg mx-auto space-y-4">
+                    <div class="flex justify-around text-xs md:text-sm text-amber-200 font-bold">
+                        <span><i class="fa-solid fa-list-check"></i> 50 MCQs</span>
+                        <span><i class="fa-solid fa-clock"></i> लाइव स्कोर</span>
+                        <span><i class="fa-brands fa-whatsapp text-emerald-400"></i> व्हाट्सएप रिपोर्ट</span>
+                    </div>
+
+                    <a href="jaiv_prakram_quiz.html" target="_blank" class="block w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-black py-4 rounded-xl shadow-lg transition text-base">
+                        🚀 50 प्रश्नों का क्विज़ शुरू करें
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Admission Form Section -->
+    <section id="contact" class="py-16 md:py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="bg-amber-100 text-amber-800 font-extrabold text-xs px-3 py-1 rounded-md uppercase tracking-wider">
+                        संपर्क सूत्र
+                    </span>
+                    <h2 class="text-3xl font-extrabold text-slate-900">
+                        हमसे संपर्क करें एवं एडमिशन लें
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        यदि आपके पास प्रवेश प्रक्रिया या कक्षाओं के समय से जुड़ा कोई भी सवाल है, तो सीधे हमसे संपर्क करें।
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">फ़ोन नंबर (Mobile / WhatsApp):</h4>
+                                <a href="tel:7617863593" class="text-blue-900 font-extrabold text-lg hover:underline">7617863593</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">निदेशक (Director):</h4>
+                                <p class="text-slate-800 font-bold">AFTAB ANSARI (B.Ed.)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">कोचिंग संस्थान:</h4>
+                                <p class="text-slate-800 font-bold">ICONIC ACADEMY</p>
+                                <p class="text-xs text-slate-500">Classes 5 to 10 | UP & CBSE Board</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-2xl border border-slate-200">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2">
+                            📝 ऑनलाइन एडमिशन / पूछताछ फ़ॉर्म
+                        </h3>
+                        <p class="text-slate-500 text-xs md:text-sm mb-6">
+                            नीचे अपना विवरण भरें। फॉर्म जमा करते ही यह मैसेज Aftab Sir के व्हाट्सएप पर पहुँच जाएगा।
+                        </p>
+
+                        <form id="inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">विद्यार्थी का नाम (Student Name) *</label>
+                                <input type="text" id="form-name" required placeholder="उदाहरण: अमित शर्मा" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-400 outline-none text-sm">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">कक्षा (Class) *</label>
+                                    <select id="form-class" required class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-400 outline-none text-sm">
+                                        <option value="">कक्षा चुनें</option>
+                                        <option value="Class 5">Class 5th</option>
+                                        <option value="Class 6">Class 6th</option>
+                                        <option value="Class 7">Class 7th</option>
+                                        <option value="Class 8">Class 8th</option>
+                                        <option value="Class 9">Class 9th</option>
+                                        <option value="Class 10">Class 10th</option>
+                                        <option value="English Spoken Batch">English Spoken Special Batch</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">बोर्ड (Board) *</label>
+                                    <select id="form-board" required class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-400 outline-none text-sm">
+                                        <option value="UP Board">UP Board (यूपी बोर्ड)</option>
+                                        <option value="CBSE Board">CBSE Board (सीबीएसई बोर्ड)</option>
+                                        <option value="Other">अन्य</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">अभिभावक/विद्यार्थी का फोन नंबर *</label>
+                                <input type="tel" id="form-phone" required placeholder="उदाहरण: 9876543210" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-400 outline-none text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">संदेश या प्रश्न (Message - Optional)</label>
+                                <textarea id="form-message" rows="3" placeholder="आप क्या जानना चाहते हैं?" class="w-full p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-400 outline-none text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Aftab Sir को WhatsApp पर मैसेज भेजें
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white pt-12 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-white p-1 border border-amber-400 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-black text-amber-400">ICONIC ACADEMY</h3>
+                    </div>
+                    <p class="text-amber-200 text-xs italic font-semibold">★ Strive for Excellence ★</p>
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                        कक्षा 5 से 10 तक (UP & CBSE Board) की बेहतरीन तैयारी और स्पोकन इंग्लिश के लिए अग्रणी कोचिंग संस्थान।
+                    </p>
+                    <p class="text-xs text-slate-300">
+                        <strong>Directed by:</strong> AFTAB ANSARI (B.Ed.) | 📞 <a href="tel:7617863593" class="hover:text-amber-400">7617863593</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-amber-400 uppercase tracking-wider mb-3">क्विक लिंक्स</h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><a href="#home" class="hover:text-amber-400">होम (Home)</a></li>
+                        <li><a href="#about" class="hover:text-amber-400">हमारे बारे में</a></li>
+                        <li><a href="#courses" class="hover:text-amber-400">कक्षाएं (Classes 5-10)</a></li>
+                        <li><a href="#spoken-english" class="hover:text-amber-400">English Spoken Batch</a></li>
+                        <li><a href="#quiz-portal" class="hover:text-amber-400">ऑनलाइन महा-क्विज़</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-amber-400 uppercase tracking-wider mb-3">हेल्पलाइन</h4>
+                    <div class="space-y-2 text-xs text-slate-300">
+                        <p class="font-bold text-white">ICONIC ACADEMY</p>
+                        <p>Classes: 5th, 6th, 7th, 8th, 9th, 10th</p>
+                        <p>Board: UP Board & CBSE Board</p>
+                        <a href="tel:7617863593" class="inline-block bg-amber-400 text-slate-950 px-3 py-1.5 rounded-lg font-black mt-2">
+                            📞 Call: 7617863593
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 text-center text-xs text-slate-500">
+                <p>© 2026 ICONIC ACADEMY. All Rights Reserved. | Directed by AFTAB ANSARI (B.Ed.)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917617863593?text=Hello%20Aftab%20Sir,%20I%20want%20to%20know%20more%20about%20ICONIC%20ACADEMY." target="_blank" title="WhatsApp पर चैट करें" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl floating-wa hover:bg-emerald-600 transition">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Admission Inquiry Modal Popup -->
+    <div id="inquiry-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative space-y-4">
+            <button onclick="closeInquiryModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold">&times;</button>
+            
+            <div class="text-center">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl mx-auto flex items-center justify-center font-bold text-xl mb-2">
+                    🎓
+                </div>
+                <h3 class="text-xl font-black text-slate-900">ICONIC ACADEMY - एडमिशन फॉर्म</h3>
+                <p class="text-xs text-slate-500">Directed by AFTAB ANSARI (B.Ed.)</p>
+            </div>
+
+            <form onsubmit="handleModalInquirySubmit(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">विद्यार्थी का नाम *</label>
+                    <input type="text" id="modal-name" required placeholder="नाम दर्ज करें" class="w-full p-2.5 border rounded-xl outline-none focus:ring-2 focus:ring-amber-400 text-sm">
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">कक्षा (Class) *</label>
+                    <select id="modal-class" required class="w-full p-2.5 border rounded-xl outline-none focus:ring-2 focus:ring-amber-400 text-sm">
+                        <option value="Class 5">Class 5th</option>
+                        <option value="Class 6">Class 6th</option>
+                        <option value="Class 7">Class 7th</option>
+                        <option value="Class 8">Class 8th</option>
+                        <option value="Class 9">Class 9th</option>
+                        <option value="Class 10">Class 10th</option>
+                        <option value="English Spoken Batch">English Spoken Batch</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">फोन नंबर *</label>
+                    <input type="tel" id="modal-phone" required placeholder="मोबाइल नंबर" class="w-full p-2.5 border rounded-xl outline-none focus:ring-2 focus:ring-amber-400 text-sm">
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl shadow-lg transition text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Aftab Sir को व्हाट्सएप भेजें
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openInquiryModal() {
+            document.getElementById('inquiry-modal').classList.remove('hidden');
+        }
+
+        function closeInquiryModal() {
+            document.getElementById('inquiry-modal').classList.add('hidden');
+        }
+
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const cls = document.getElementById('form-class').value;
+            const board = document.getElementById('form-board').value;
+            const phone = document.getElementById('form-phone').value;
+            const msg = document.getElementById('form-message').value;
+
+            const text = `🎓 *ICONIC ACADEMY - नई एडमिशन पूछताछ*\n\n` +
+                         `👤 *विद्यार्थी का नाम:* ${name}\n` +
+                         `📚 *कक्षा:* ${cls}\n` +
+                         `🏛️ *बोर्ड:* ${board}\n` +
+                         `📞 *फोन नंबर:* ${phone}\n` +
+                         (msg ? `💬 *प्रश्न:* ${msg}\n\n` : `\n`) +
+                         `नमस्ते Aftab Sir, मुझे ICONIC ACADEMY में प्रवेश के संबंध में जानकारी चाहिए।`;
+
+            window.open(`https://wa.me/917617863593?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function handleModalInquirySubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('modal-name').value;
+            const cls = document.getElementById('modal-class').value;
+            const phone = document.getElementById('modal-phone').value;
+
+            const text = `🎓 *ICONIC ACADEMY - एडमिशन पूछताछ*\n\n` +
+                         `👤 *विद्यार्थी का नाम:* ${name}\n` +
+                         `📚 *कक्षा:* ${cls}\n` +
+                         `📞 *फोन नंबर:* ${phone}\n\n` +
+                         `नमस्ते Aftab Sir, मुझे नया बैच ज्वाइन करना है। विवरण प्रदान करें।`;
+
+            window.open(`https://wa.me/917617863593?text=${encodeURIComponent(text)}`, '_blank');
+            closeInquiryModal();
+        }
+    </script>
+</body>
+</html>
